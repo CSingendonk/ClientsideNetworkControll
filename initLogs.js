@@ -2,16 +2,10 @@
 // A self-contained advanced logging system that injects a UI and intercepts network and console calls.
 /**
  * @author: Chris Singendonk
- * @copyright: &copy; 2024-present, the author
- * @license: https://raw.githubusercontent.com/CSingendonk/extensions/refs/heads/main/LICENSE
+ * @license ALL RIGHTS RESERVED
+ * @copyright Chris Singendonk 2024 - 2025
  */
-(
-  /**
- * @author: Chris Singendonk
- * @copyright: &copy; 2024-present, the author
- * @license: https://raw.githubusercontent.com/CSingendonk/extensions/refs/heads/main/LICENSE
- */
-function initAdvancedLogger() {
+(function initAdvancedLogger() {
 
   /* ─── INTERNAL STATE ────────────────────────────────────────────── */
   let isInternal = false;
