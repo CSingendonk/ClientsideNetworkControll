@@ -566,6 +566,9 @@
   function interceptFetch() {
     const originalFetch = window.fetch;
     window.fetch = async function(...args) {
+      if (!confirm(`Allow ${args[0]} to access this browser?`)) {
+        return false;
+      };
       if (isInternal) return originalFetch.apply(this, args);
       const url = args[0];
       const method = (args[1]?.method || "GET");
@@ -637,6 +640,9 @@
     window.XMLHttpRequest = class extends originalXHR {
       constructor(...args) {
         super(...args);
+      if (!confirm(`Allow ${args[0]} to access this browser?`)) {
+        return false;
+      };
         this.addEventListener("load", () => {
           if (isInternal) return;
           const duration = Math.round(performance.now() - this._startTime);
@@ -817,4 +823,4 @@ class LogPanel extends HTMLElement {
   }
 }
 
-customElements.define('log-panel', LogPanel);
+window.customElements.define('log-panel', LogPanel);
