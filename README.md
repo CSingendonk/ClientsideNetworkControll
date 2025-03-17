@@ -62,5 +62,7 @@
    is strictly prohibited and may result in legal action. By accessing or handling this work in any way,  
    you acknowledge and agree to abide by these terms.  
 
-   **If in doubt—ask first.**  
-*/
+   **If in doubt—ask first.** 
+
+   **Any API or logic used, but not defined, within is most likely documented in W3, mdn, or google dev docs as the script uses base JS web APIs and those are subject to the owners copyright.**
+   **Any breech of contract, law, or other official restrictions occuring due to use of this work is entirely upon the user**
