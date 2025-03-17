@@ -29,6 +29,6 @@ Copyright (c) 2024-2026 Chris Singendonk. All Rights Reserved.
  or just found it helpful, please reach out and share your experience.  
  You can contact me at: [https://www.github.com/csingendonk]
 
- ## DISCLAIMER: The author places no restriction on the enjoyment or use of this work but asks that its origins be respected.  
+ ## DISCLAIMER: The author places no restriction on the enjoyment of this work but asks that its origins be respected and intellectual proerty rights be adhered to.  
  If you build upon it, improve it, or find value in it, a simple nod of acknowledgment ensures the cycle of learning and growth continues—  
  for both the project and the people who made it possible.  
