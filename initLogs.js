@@ -1,30 +1,12 @@
 // ALL RIGHTS RESERVED
-// © 2024, 2025, 2026 - Chris Singendonk  
-// Copyright (c) 2024-2026 Chris Singendonk. All Rights Reserved.  
-// Licensed under an open-source model for public viewing, modification, and use, with attribution required.  
-// By using, reproducing, adapting, extending, refactoring, or otherwise building upon this work or any derivative,  
-// you acknowledge and respect the original contribution.  
-
-// Think of it this way: You’ve spent countless hours designing a gravity-defying, tune-playing flying car.  
-// You share your work freely, knowing that collaboration is the key to progress. Others join in, improving the design, pushing it further than you ever could alone.  
-// But somewhere along the way, the updates stop reaching you. Your team moves forward, building on what you started, but without your knowledge.  
-// They launch new models, refine the technology, solve problems you never even knew existed—while you, the original creator, are left staring at your old blueprints,  
-// unable to grow, to learn, or to contribute to what has become of your own work.  
-
-// This is why attribution matters. Not just as a form of respect, but as a means of keeping creators connected to their creations.  
-// Innovation isn’t just about the product—it’s about the people behind it, learning, improving, and evolving together.  
-// Acknowledgment ensures that those who plant the seeds of progress aren’t left in the dark while others harvest the rewards.  
-
 // CONTACT & USAGE REQUEST:  
-// If this work has been useful to you, I’d love to hear about it! Whether you’re using it in a project, modifying it in an interesting way,  
-// or just found it helpful, please reach out and share your experience.  
+// If this work will be useful to you, I’d love to hear about it! Whether you’re going to adapt it to a project, modify it in an interesting way,  
+// or just found it helpful for your own work, please reach out and share your experience.  
 // You can contact me at: [https://www.github.com/csingendonk]
 
 /**
  * ALL RIGHTS RESERVED
  *@author: Chris Singendonk (github.com/csingendonk)
- *@license none All rights reserved.
- *@Do_not_use_or_reproduce_Without_explicit_permission_and_proper_attribution_from_and_to_the_author
  *@note (Not for use without explicit permission and proper attribution.) 
  */
 const DOMLogger = (() =>
@@ -38,7 +20,7 @@ const DOMLogger = (() =>
       settings[ n ] = {
         on: true,
         log: true,
-        toast: true,
+        toast: false,
         toasttype: "info",
         toasttime: 100
       };
@@ -2433,21 +2415,9 @@ const FUCKOFF = (function (_) { return DOMLogger || _; })();
 Object.assign(window, FUCKOFF);
 window.DOMLogger = FUCKOFF;
 
-// initLogs.js
-// A self-contained advanced logging system that injects a UI and intercepts network and console calls.
-/**
- * @author: Chris Singendonk
- * @copyright: &copy; 2024-present, the author
- * @license: https://raw.githubusercontent.com/CSingendonk/extensions/refs/heads/main/LICENSE
- */
-(
-  /**
- * @author: Chris Singendonk
- * @copyright: &copy; 2024-present, the author
- */
-
-  function initAdvancedLogger()
-  {
+class BasicVersion {
+  constructor() {
+    return(() => {
 
     /* ─── INTERNAL STATE ────────────────────────────────────────────── */
     let isInternal = false;
@@ -2544,10 +2514,8 @@ window.DOMLogger = FUCKOFF;
         setTimeout(() => toast.remove(), 300);
       }, timeoutMs);
     }
-
     /* ─── STYLE & UI: LOG PANEL ────────────────────────────────────────── */
-    function injectStyles()
-    {
+    function injectStyles( {
       const light = {
         background: "#ffffff",
         color: "#000000",
@@ -2721,8 +2689,7 @@ window.DOMLogger = FUCKOFF;
     let searchInput, filterCheckboxes, logContent;
 
     function createLogPanel()
-    {
-      injectStyles();
+    {injectStyles();
       const panel = document.createElement("div");
       panel.id = "logPanel";
       panel.innerHTML = `
@@ -3353,3 +3320,4 @@ class LogPanel extends HTMLElement
 }
 
 customElements.define('log-panel', LogPanel);
+}})()
