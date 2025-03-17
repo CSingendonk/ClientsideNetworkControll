@@ -1,34 +1,66 @@
-## All rights reserved
-as per github: 
-  --"However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work."
+# All rights reserved.
+- as per github: 
+  "...However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work."
   
-# (w.i.p) ClientsideNetworkControll
-  A single file containing a JavaScript iife that returns and initiates a completely client-side vanilla in-page ui where you can log and additionally block network traffic before it completes (basically a border guard per se) and prompts you to disintegrate or allow each request using thread blocking logic.
---This is an obsolete draft copy of the complete code from a previous point in time and state. Please contact for collaboration.
 
- ### © 2024, 2025, 2026 - Chris Singendonk  
-Copyright (c) 2024-2026 Chris Singendonk. All Rights Reserved.  
- Licensed under an open-source model for public viewing, modification, and use, with attribution required.  
- By using, reproducing, adapting, extending, refactoring, or otherwise building upon this work or any derivative,  
- you acknowledge and respect the original contribution.  
+(w.i.p) 
+# ClientsideNetworkControll
 
- # Think of it this way: 
- You’ve spent countless hours designing a gravity-defying, tune-playing flying car.  
- You share your work freely, knowing that collaboration is the key to progress. Others join in, improving the design, pushing it further than you ever could alone.  
- But somewhere along the way, the updates stop reaching you. Your team moves forward, building on what you started, but without your knowledge.  
- They launch new models, refine the technology, solve problems you never even knew existed—while you, the original creator, are left staring at your old blueprints,  
- unable to grow, to learn, or to contribute to what has become of your own work.  
+   A single file containing a JavaScript IIFE that returns and initiates a completely client-side,
+   vanilla in-page UI. This tool logs and, if desired, blocks network traffic before it completes—acting
+   as a border guard of sorts. With extensive options, you can control what, how, where, when, and even
+   if logging occurs. Manage DOM events and mutations, performance metrics, console output, and more—all
+   dynamically within your active browser tab.
 
- ### This is why attribution matters. 
- Not just as a form of respect, but as a means of keeping creators connected to their creations.  
- Innovation isn’t just about the product—it’s about the people behind it, learning, improving, and evolving together.  
- Acknowledgment ensures that those who plant the seeds of progress aren’t left in the dark while others harvest the rewards.  
+   -- This is an obsolete draft copy of the complete code from a previous point in time and state.
+   -- It does work when ran in the document browser scope.. however you get it there ;)
+   Please contact for collaboration.
 
- # CONTACT & USAGE REQUEST:  
- If this work has been useful to you, I’d love to hear about it! Whether you’re using it in a project, modifying it in an interesting way,  
- or just found it helpful, please reach out and share your experience.  
- You can contact me at: [https://www.github.com/csingendonk]
+   ===========================================================
+   ## COPYRIGHT & RESTRICTIONS
 
- ## DISCLAIMER: The author places no restriction on the enjoyment of this work but asks that its origins be respected and intellectual proerty rights be adhered to.  
- If you build upon it, improve it, or find value in it, a simple nod of acknowledgment ensures the cycle of learning and growth continues—  
- for both the project and the people who made it possible.  
+   © 2024, 2025, 2026 - Chris Singendonk  
+   Copyright (c) 2024-2026 Chris Singendonk. All Rights Reserved.  
+
+   This work is **NOT LICENSED** for public or private use, modification, distribution, reproduction,
+   or the creation of derivative works **without explicit written approval from the author**.  
+   The default copyright laws apply, meaning **you may not use, modify, or distribute any part of this work
+   in any form** unless you have received direct permission from the copyright holder.  
+
+   Unauthorized usage, reproduction, modification, or distribution of this work, in whole or in part,
+   is a violation of copyright law.  
+
+   ===========================================================
+   Think of it this way:  
+   You’ve poured countless hours into designing a gravity-defying, tune-playing flying car.
+   You share your creation selectively, knowing that collaboration is the key to progress.
+   Others recognize its potential, but instead of working with you, they take the blueprint and run with it,
+   making improvements behind closed doors while you remain unaware.  
+
+   They release their own version, solve problems you never encountered, and refine the design—but you,  
+   the original creator, are left out of the loop, unable to learn from or contribute to what has become  
+   of your own work. Your progress is artificially limited, while others reap the rewards of your effort.  
+
+   This is why permission and attribution matter:  
+   Innovation isn’t just about the end product—it’s about **inclusion, shared learning, and the mutual respect**
+   that comes from working together. Acknowledgment ensures that those who plant the seeds of progress  
+   are not cast aside while others harvest the results.  
+
+   ===========================================================
+   ## CONTACT FOR APPROVAL
+
+   If you are interested in using, modifying, or building upon this work,  
+   **you must first obtain explicit written permission from the author.**  
+   I welcome collaboration, but only when mutual understanding and respect are upheld.  
+
+   Contact: [https://www.github.com/csingendonk]  
+
+   ===========================================================
+   ## LEGAL NOTICE  
+
+   Any unauthorized use, reproduction, modification, or distribution of this work, in whole or in part,  
+   is strictly prohibited and may result in legal action. By accessing or handling this work in any way,  
+   you acknowledge and agree to abide by these terms.  
+
+   **If in doubt—ask first.**  
+*/
