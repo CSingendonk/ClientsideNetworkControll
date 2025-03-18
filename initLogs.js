@@ -1,4 +1,24 @@
 // ALL RIGHTS RESERVED
+/*
+Imagine a gardener who has an apple tree, and dreams of making apple pie. But there’s one catch: pies have never been invented.
+The gardener, brimming with visionary ideas, bakes apple cakes but shares the concept of pie with anyone who will listen.
+Then, someone hears the idea, takes the gardener's apples, bakes pies, and claims ownership of them.
+Not only that, but with more trees and resources eventually patent the pies — completely altering the landscape and profiting off the gardener's vision.
+They engineer the perfect system to mass-produce the apples, all while claiming full credit for the pies.
+Sure, the pies multiply, but the gardener is left with their tree and an idea.
+Unable to support the developments needed to bake pies themselves, they are stripped of the opportunity to build upon their creation.
+Their vision, their potential to evolve and contribute further, is lost forever.
+This scenario is not just about lost fruit; it's about the consequences of creative espionage, plagiarism, and failure to properly attribute sources.
+In the world of code and intellectual property, failure to honor the original creator leads to more than just stolen work—it stifles innovation. 
+The creator’s future contributions are cut off, and the adopting party is limited by their own inability to concieve the original idea.
+When someone uses code without permission, claiming it as their own, or fails to properly attribute the original author, they’re not just stealing a product,
+they’re hindering the very source of future growth. The original creator loses the chance to evolve, improve, and contribute further.
+Meanwhile, the adoptee now lacks the imagination and insights of the original creator that could help them break through roadblocks.
+
+In the same way that the gardener’s vision for pies was lost without attribution, so too is the progress of an idea, concept, or innovation when the source is not credited.
+The proper attribution and recognition of intellectual work are not mere formalities,
+they are vital to ensuring that creativity continues to flourish, not just for the original creator but for everyone who benefits from it.
+*/
 // CONTACT & USAGE REQUEST:  
 // If this work will be useful to you, I’d love to hear about it! Whether you’re going to adapt it to a project, modify it in an interesting way,  
 // or just found it helpful for your own work, please reach out and share your experience.  
