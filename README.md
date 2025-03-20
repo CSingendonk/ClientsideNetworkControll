@@ -2,6 +2,7 @@
 - as per github: 
   "...However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work."
   
+  Proof of concept concept drafts can be found in my whoops and htmlpanels repositories as well
 
 (w.i.p) 
 # ClientsideNetworkControll
