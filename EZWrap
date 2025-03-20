@@ -1,0 +1,111 @@
+// ALL RIGHTS RESERVED
+// © 2024, 2025, 2026 - Chris Singendonk  
+// Copyright (c) 2024-2026 Chris Singendonk. All Rights Reserved.  
+// By using, reproducing, adapting, extending, refactoring, or otherwise building upon this work or any derivative,  
+// you acknowledge and respect the original contribution.  
+// Think of it this way: You’ve spent countless hours designing a gravity-defying, tune-playing flying car.  
+// You share your work freely, knowing that collaboration is the key to progress. Others join in, improving the design, pushing it further than you ever could alone.  
+// But somewhere along the way, the updates stop reaching you. Your team moves forward, building on what you started, but without your knowledge.  
+// They launch new models, refine the technology, solve problems you never even knew existed—while you, the original creator, are left staring at your old blueprints,  
+// unable to grow, to learn, or to contribute to what has become of your own work.  
+// This is why attribution matters. Not just as a form of respect, but as a means of keeping creators connected to their creations.  
+// Innovation isn’t just about the product—it’s about the people behind it, learning, improving, and evolving together.  
+// Acknowledgment ensures that those who plant the seeds of progress aren’t left in the dark while others harvest the rewards.  
+// CONTACT & USAGE REQUEST:  
+// If this work has been useful to you, I’d love to hear about it! Whether you’re using it in a project, modifying it in an interesting way,  
+// or just found it helpful, please reach out and share your experience.  
+// You can contact me at: [https://www.github.com/csingendonk]
+const log = function (...data) {
+  console.log(data);
+};
+
+const error = function (...data) {
+  console.error(...data);
+};
+const wrap = function ()  {
+  const ALW = function (target = Object.create(this), wrapper = null) {
+    if (!target || wrapper) {
+      (Object.assign({}, window.console)).log(' ? ');
+    };
+    if (wrapper == Object.create(this) || wrapper == null) {
+      wrapper = undefined;
+    }
+    const wrapperObj = wrapper ? wrapper : {};
+    if (target == wrapper) {
+      let v = Object.assign({}, wrapper,target,{invalid: wrapper, nonsubstantial: target})
+      return true;
+    }
+    try {
+      const theTarget = Object.assign({}, {...target});
+      Array.from(Object.keys(theTarget)).forEach((prop) => {
+        if (typeof target[prop] === "function") {
+          try {
+            const original = target[prop].bind(theTarget);
+            window[target.name ? target.name : 'console'][prop] = (...args) => {
+              return original(...args);
+            };
+          } catch (e) {
+            
+          }
+        }
+      });
+  
+      // Wrap methods from the prototype chain (for objects like document)
+      let proto = Object.getPrototypeOf(target);
+      while (proto) {
+        Object.getOwnPropertyNames(proto).forEach((method) => {
+          // Skip the constructor and if it's already wrapped
+          if (method === "constructor" || wrapperObj[method]) return;
+          const descriptor = Object.getOwnPropertyDescriptor(proto, method);
+          if (descriptor && typeof descriptor.value === "function") {
+            
+            const original = descriptor.value;
+            try {
+              wrapperObj[method] = (...args) => {
+                log(target.constructor.name, method, args);
+                return original.apply(target, args);
+              };
+            } catch (e) {
+              (Object.assign({}, window.console)).error(`Error wrapping ${method}:`, e);
+            }
+          }
+        });
+        proto = Object.getPrototypeOf(proto);
+      }
+    } catch (error) {
+      (Object.assign({}, window.console)).error(error);
+    }
+  };
+  
+  
+  const wrappedConsole = {};
+  ALW(window.console, wrappedConsole);
+  Object.assign(window.console, {...wrappedConsole})
+  window.console.log("Hello, world!");
+  console.error('noerror');
+  
+  const wrappedFetch = {};
+  ALW(window, wrappedFetch);
+  const originalFetch = window.fetch.bind(window);
+  
+  wrappedFetch.fetch = (...args) => {
+    console.log("Fetch called with arguments:", args);
+    return originalFetch(...args);
+  };
+  window.fetch = wrappedFetch.fetch;
+  const wrappedDocument = {};
+  ALW(document, wrappedDocument);
+  try {
+    const docob = Object.assign(window.document, {...wrappedDocument});
+    window.document.createElement('div');
+  } catch (error) { 
+    console.dirxml(error);
+  }
+  const div = wrappedDocument.createElement("div");
+  console.log(div instanceof HTMLDivElement); // Should log true
+  const wrappedEvent = {};
+  ALW(Event.prototype, wrappedEvent);
+  const ogEvent = Event 
+
+  }
+  wrap();
