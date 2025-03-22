@@ -32,16 +32,35 @@
    is a violation of copyright law.  
 
    ===========================================================
-   Think of it this way:  
-   You’ve poured countless hours into designing a gravity-defying, tune-playing flying car.
+   ## Imagine
+   a gardener who has an apple tree, and dreams of making apple pie. But there’s one catch: pies have never been invented.
+The gardener, brimming with visionary ideas, bakes apple cakes but shares the concept of pie with anyone who will listen.
+Then, someone hears the idea, takes the gardener's apples, bakes pies, and claims ownership of them.
+Not only that, but with more trees and resources eventually patent the pies — completely altering the landscape and profiting off the gardener's vision.
+They engineer the perfect system to mass-produce the apples, all while claiming full credit for the pies.
+Sure, the pies multiply, but the gardener is left with their tree and an idea.
+Unable to support the developments needed to bake pies themselves, they are stripped of the opportunity to build upon their creation.
+Their vision, their potential to evolve and contribute further, is lost forever.
+This scenario is not just about lost fruit; it's about the consequences of creative espionage, plagiarism, and failure to properly attribute sources.
+In the world of code and intellectual property, failure to honor the original creator leads to more than just stolen work—it stifles innovation. 
+The creator’s future contributions are cut off, and the adopting party is limited by their own inability to concieve the original idea.
+When someone uses code without permission, claiming it as their own, or fails to properly attribute the original author, they’re not just stealing a product,
+they’re hindering the very source of future growth. The original creator loses the chance to evolve, improve, and contribute further.
+Meanwhile, the adoptee now lacks the imagination and insights of the original creator that could help them break through roadblocks.
+
+In the same way that the gardener’s vision for pies was lost without attribution, so too is the progress of an idea, concept, or innovation when the source is not credited.
+The proper attribution and recognition of intellectual work are not mere formalities,
+they are vital to ensuring that creativity continues to flourish, not just for the original creator but for everyone who benefits from it.
+
+   # Think of it this way:  
+   You’ve poured countless hours into designing and building a car.
    You share your creation selectively, knowing that collaboration is the key to progress.
+   Sure, you didnt invent cars, but let's say you solve an issue in a way that is unique to your car, but not quite "up to snuff".
    Others recognize its potential, but instead of working with you, they take the blueprint and run with it,
    making improvements behind closed doors while you remain unaware.  
-
    They release their own version, solve problems you never encountered, and refine the design—but you,  
    the original creator, are left out of the loop, unable to learn from or contribute to what has become  
    of your own work. Your progress is artificially limited, while others reap the rewards of your effort.  
-
    This is why permission and attribution matter:  
    Innovation isn’t just about the end product—it’s about **inclusion, shared learning, and the mutual respect**
    that comes from working together. Acknowledgment ensures that those who plant the seeds of progress  
