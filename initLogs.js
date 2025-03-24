@@ -917,8 +917,8 @@
       );
       const initPerformance = () =>
       {
-        observeFCP();
-        observeCLS();
+      //  observeFCP();
+       // observeCLS();
       }
         ;
       return {
@@ -1353,10 +1353,11 @@
         window.fetch = interceptedFetch;
         const cfi = setInterval(() => {
           if (window.fetch != interceptedFetch) {
-            console.log(safeStringify(Object.assign({}, window.fetch)));
-            init();
-            console.count(`cfi`);
-            console.log(cfi);
+              init();
+           // console.log(safeStringify(Object.assign({}, window.fetch)));
+             
+            // console.count(`cfi`);
+            // console.log(cfi);
             clearInterval(cfi);
           }
     }, 1);
