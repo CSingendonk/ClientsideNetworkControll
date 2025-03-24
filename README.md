@@ -2,32 +2,45 @@
 - as per github: 
   "...However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work."
   
-  Proof of concept concept drafts can be found in my whoops and htmlpanels repositories as well
-
-(w.i.p) 
-# ClientsideNetworkControll
-
-   A single file containing a JavaScript IIFE that returns and initiates a completely client-side,
-   vanilla in-page UI. This tool logs and, if desired, blocks network traffic before it completes—acting
-   as a border guard of sorts. With extensive options, you can control what, how, where, when, and even
-   if logging occurs. Manage DOM events and mutations, performance metrics, console output, and more—all
-   dynamically within your active browser tab.
-
-   -- This is an obsolete draft copy of the complete code from a previous point in time and state.
-   -- It does work when ran in the document browser scope.. however you get it there ;)
-     -- The three big browsers' DevTools console works great, just paste the "core.js" script into the console to test it.
-   Please contact for collaboration.
-
-   ===========================================================
-   ## COPYRIGHT & RESTRICTIONS
-
-   © 2024, 2025, 2026 - Chris Singendonk  
-   Copyright (c) 2024-2026 Chris Singendonk. All Rights Reserved.  
+  Proof of concept drafts can be found in my whoops and htmlpanels repositories as well
+  # © 2024, 2025, 2026 - Chris Singendonk  
+   Copyright (c) 2024 - Chris Singendonk. All Rights Reserved.  
 
    This work is **NOT LICENSED** for public or private use, modification, distribution, reproduction,
    or the creation of derivative works **without explicit written approval from the author**.  
    The default copyright laws apply, meaning **you may not use, modify, or distribute any part of this work
    in any form** unless you have received direct permission from the copyright holder.  
+   
+   # ClientsideNetworkControll
+
+   A single file containing a JavaScript IIFE that returns and initiates a completely client-side,
+   vanilla in-page UI. This tool logs and, if desired, blocks network traffic before it completes—acting
+   as a border guard of sorts. With extensive options, you can control what, how, where, when, and even
+   if logging occurs. Visualize and step through DOM events and mutations, performance metrics, console output, and more
+  -all dynamically within your active browser tab with or without a network connection. 
+  - This is an obsolete draft copy of the complete code from a previous point in time and state.
+  - It does work when ran in the document browser scope.. however you get it there ;)
+  - The three big browsers' DevTools console works great, just paste the "core.js" script into the console to test it.
+  - Please contact for collaboration.
+
+# ZERO DATA COLLECTION
+### NO COOKIES TRACKERS OR DATA COLLECTION 
+## STATIC LOCAL OFFLINE
+  - though it can be served from anywhere.
+  -  - see release 1 for demo.
+## BASE BLOCKING FUNCTIONALITY WORKS WITH LESS THAN 5000 chars.
+  - includes XHR, BGSW, WS, HTTP.
+  ![Screenshot 2025-03-23 215408](https://github.com/user-attachments/assets/36748a7e-f16f-4462-9c62-ec0c48139fd0)
+![image](https://github.com/user-attachments/assets/9d16df45-5409-4de1-8e95-29c2e2a17d52)
+![image](https://github.com/user-attachments/assets/4dd61563-3434-4ca1-b905-22a34652c43a)
+
+[https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/core.js
+](https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/core.js)
+
+## UI CSS AND HTML AND JS MODULES IN ONE FILE UNDER 3000 lines.
+  - [(https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/initLogs.js)
+](https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/initLogs.js)
+   ## COPYRIGHT & RESTRICTIONS
 
    Unauthorized usage, reproduction, modification, or distribution of this work, in whole or in part,
    is a violation of copyright law.  
