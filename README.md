@@ -15,6 +15,7 @@
 
    -- This is an obsolete draft copy of the complete code from a previous point in time and state.
    -- It does work when ran in the document browser scope.. however you get it there ;)
+     -- The three big browsers' DevTools console works great, just paste the "core.js" script into the console to test it.
    Please contact for collaboration.
 
    ===========================================================
