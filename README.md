@@ -1,102 +1,145 @@
-# All rights reserved.
-- as per github: 
-  "...However, without a license, the default copyright laws apply, meaning that you retain all rights to your source code and no one may reproduce, distribute, or create derivative works from your work."
-  
-  Proof of concept drafts can be found in my whoops and htmlpanels repositories as well
-  # © 2024, 2025, 2026 - Chris Singendonk  
-   Copyright (c) 2024 - Chris Singendonk. All Rights Reserved.  
+# ALL RIGHTS RESERVED
 
-   This work is **NOT LICENSED** for public or private use, modification, distribution, reproduction,
-   or the creation of derivative works **without explicit written approval from the author**.  
-   The default copyright laws apply, meaning **you may not use, modify, or distribute any part of this work
-   in any form** unless you have received direct permission from the copyright holder.  
-   
-   # ClientsideNetworkControll
+> **As per GitHub**:  
+> “However, without a license, the default copyright laws apply, meaning that
+> you retain all rights to your source code and no one may reproduce, distribute,
+> or create derivative works from your work.”
 
-   A single file containing a JavaScript IIFE that returns and initiates a completely client-side,
-   vanilla in-page UI. This tool logs and, if desired, blocks network traffic before it completes—acting
-   as a border guard of sorts. With extensive options, you can control what, how, where, when, and even
-   if logging occurs. Visualize and step through DOM events and mutations, performance metrics, console output, and more
-  -all dynamically within your active browser tab with or without a network connection. 
-  - This is an obsolete draft copy of the complete code from a previous point in time and state.
-  - It does work when ran in the document browser scope.. however you get it there ;)
-  - The three big browsers' DevTools console works great, just paste the "core.js" script into the console to test it.
-  - Please contact for collaboration.
+Proof-of-concept drafts can be found in my [whoops](https://github.com/CSingendonk/whoops)
+and [htmlpanels](https://github.com/CSingendonk/htmlpanels) repositories as well.
+
+---
+
+## © 2024, 2025, 2026 - Chris Singendonk
+Copyright (c) 2024  
+All Rights Reserved.
+
+This work is **NOT LICENSED** for public or private use, modification, distribution,
+reproduction, or creation of derivative works **without explicit written approval
+from the author**.
+
+By default, **you may not use, modify, or distribute any part of this work** unless you have
+received direct permission from the copyright holder.
+
+> **Note**: Any API or code not defined within this project is assumed to be part of
+> a standard web API, which is typically documented in official web development resources.
+> The scripts rely on base web APIs, each subject to its respective owner’s copyright
+> and/or licensing conditions.
+
+``text
+Any breach of contract, law, or other official restrictions, regulations, stipulations,
+or other such legalities arising from the use of this work is entirely upon the user.
+``
+
+---
+
+# ClientsideNetworkControll
+A suite of client-side tools for monitoring, logging, and optionally blocking network traffic.
+
+## core.js
+- A single JavaScript IIFE that returns and initiates a purely client-side tool.
+- Load the script in the desired browser scope to watch and manage network events.
+- It **does** work in most major browsers and can be tested by running `core.js` in the DevTools console.
+- Or include it directly:
+``html
+<script src="https://csingendonk.github.io/clientsidenetworkcontrol/core.js">
+<!-- or wherever it is located (local/server-side) -->
+</script>
+``
+
+## initLogs.js
+- Logs and, if desired, blocks network traffic before completion.
+- Offers extensive options for controlling **what**, **how**, **where**, **when**, and **if** logging occurs.
+  - Visualize
+  - Modify
+  - Log
+  - Step through
+    - events
+    - mutations
+    - performance metrics
+    - console output
+    - and more
+- Can run **without a network connection** (in special scenarios).
+- The file is currently incomplete and broken. If you have questions, **reach out** for a detailed run-down.
+
+[View core.js on GitHub](https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/core.js)  
+[View initLogs.js on GitHub](https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/initLogs.js)
+
+---
 
 # ZERO DATA COLLECTION
-### NO COOKIES TRACKERS OR DATA COLLECTION 
-## STATIC LOCAL OFFLINE
-  - though it can be served from anywhere.
-  -  - see release 1 for demo.
-## BASE BLOCKING FUNCTIONALITY WORKS WITH LESS THAN 5000 chars.
-  - includes XHR, BGSW, WS, HTTP.
-  ![Screenshot 2025-03-23 215408](https://github.com/user-attachments/assets/36748a7e-f16f-4462-9c62-ec0c48139fd0)
+### NO COOKIES, TRACKERS, OR DATA COLLECTION
+- The script is fully static and can be used **offline**—though it can be served from anywhere.
+- By default, **no data** is logged, stored, or transmitted to any external entity.
+- You can disable local storage entirely, though logs will not persist between sessions or tabs.
+- Optionally, you may set up remote syncing and exporting.
+
+See [Release 1](https://github.com/CSingendonk/ClientsideNetworkControl/releases/tag/1) for a demo.
+
+## BASE BLOCKING FUNCTIONALITY (< 5000 CHARS)
+Includes XHR, BGSW, WS, HTTP.
+
 ![image](https://github.com/user-attachments/assets/9d16df45-5409-4de1-8e95-29c2e2a17d52)
 ![image](https://github.com/user-attachments/assets/4dd61563-3434-4ca1-b905-22a34652c43a)
 
-[https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/core.js
-](https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/core.js)
+---
 
-## UI CSS AND HTML AND JS MODULES IN ONE FILE UNDER 3000 lines.
-  - [(https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/initLogs.js)
-](https://github.com/CSingendonk/ClientsideNetworkControl/blob/CSingendonk/initLogs.js)
-   ## COPYRIGHT & RESTRICTIONS
+## UI, CSS, HTML, AND JS MODULES IN ONE FILE
+- Under 3000 lines total.
 
-   Unauthorized usage, reproduction, modification, or distribution of this work, in whole or in part,
-   is a violation of copyright law.  
+---
 
-   ===========================================================
-   ## Imagine
-   a gardener who has an apple tree, and dreams of making apple pie. But there’s one catch: pies have never been invented.
-The gardener, brimming with visionary ideas, bakes apple cakes but shares the concept of pie with anyone who will listen.
-Then, someone hears the idea, takes the gardener's apples, bakes pies, and claims ownership of them.
-Not only that, but with more trees and resources eventually patent the pies — completely altering the landscape and profiting off the gardener's vision.
-They engineer the perfect system to mass-produce the apples, all while claiming full credit for the pies.
-Sure, the pies multiply, but the gardener is left with their tree and an idea.
-Unable to support the developments needed to bake pies themselves, they are stripped of the opportunity to build upon their creation.
-Their vision, their potential to evolve and contribute further, is lost forever.
-This scenario is not just about lost fruit; it's about the consequences of creative espionage, plagiarism, and failure to properly attribute sources.
-In the world of code and intellectual property, failure to honor the original creator leads to more than just stolen work—it stifles innovation. 
-The creator’s future contributions are cut off, and the adopting party is limited by their own inability to concieve the original idea.
-When someone uses code without permission, claiming it as their own, or fails to properly attribute the original author, they’re not just stealing a product,
-they’re hindering the very source of future growth. The original creator loses the chance to evolve, improve, and contribute further.
-Meanwhile, the adoptee now lacks the imagination and insights of the original creator that could help them break through roadblocks.
+# HONORING COPYRIGHT & RESTRICTIONS IN COLLABORATIONS
+Unauthorized usage, reproduction, modification, or distribution of this work, in whole or in part,
+violates copyright law.
 
-In the same way that the gardener’s vision for pies was lost without attribution, so too is the progress of an idea, concept, or innovation when the source is not credited.
-The proper attribution and recognition of intellectual work are not mere formalities,
-they are vital to ensuring that creativity continues to flourish, not just for the original creator but for everyone who benefits from it.
+### Consider
+A gardener has an apple tree and dreams of making apple pie, but pies have never been invented.  
+The gardener, full of ideas, bakes apple cakes while sharing the pie concept with anyone who’ll listen.  
+Someone takes the gardener’s apples, bakes pies, and claims ownership—eventually patenting the pies,  
+altering the landscape and profiting off the gardener’s vision.
 
-   # Think of it this way:  
-   You’ve poured countless hours into designing and building a car.
-   You share your creation selectively, knowing that collaboration is the key to progress.
-   Sure, you didnt invent cars, but let's say you solve an issue in a way that is unique to your car, but not quite "up to snuff".
-   Others recognize its potential, but instead of working with you, they take the blueprint and run with it,
-   making improvements behind closed doors while you remain unaware.  
-   They release their own version, solve problems you never encountered, and refine the design—but you,  
-   the original creator, are left out of the loop, unable to learn from or contribute to what has become  
-   of your own work. Your progress is artificially limited, while others reap the rewards of your effort.  
-   This is why permission and attribution matter:  
-   Innovation isn’t just about the end product—it’s about **inclusion, shared learning, and the mutual respect**
-   that comes from working together. Acknowledgment ensures that those who plant the seeds of progress  
-   are not cast aside while others harvest the results.  
+While pies multiply, the gardener is left with only a tree and the original idea—unable to fund or
+develop the pie concept. This is about more than lost fruit; it’s about creative espionage, plagiarism,
+and failing to attribute sources properly. In code and IP, failing to honor the original creator does
+more than steal work; it stifles innovation. Future contributions are lost, and the adopting party is
+limited by their own inability to conceive the idea.
 
-   ===========================================================
-   ## CONTACT FOR APPROVAL
+When someone uses code without permission—claiming it as their own—or fails to credit the author, they
+not only steal a product but also hamper future progress. The original creator loses the chance to
+improve and contribute further. Meanwhile, the adopter lacks the creator’s insights that might help
+them overcome roadblocks.
 
-   If you are interested in using, modifying, or building upon this work,  
-   **you must first obtain explicit written permission from the author.**  
-   I welcome collaboration, but only when mutual understanding and respect are upheld.  
+In the same way that the gardener’s vision for pies was lost without attribution, so too is progress
+lost when a source isn’t credited. Proper attribution ensures creativity flourishes for everyone.
 
-   Contact: [https://www.github.com/csingendonk]  
+### Another View
+You’ve spent countless hours designing and building a car. Collaboration is crucial, but others see
+your blueprint, take it, and improve it behind closed doors, leaving you out. You never learn from
+their enhancements, and they profit from your ideas while your own progress stalls.  
+This is why **permission and attribution** matter: innovation is about **inclusion, shared learning,
+and mutual respect**. Acknowledgment ensures those who plant the seeds of progress aren’t cast aside
+while others harvest the fruits.
 
-   ===========================================================
-   ## LEGAL NOTICE  
+---
 
-   Any unauthorized use, reproduction, modification, or distribution of this work, in whole or in part,  
-   is strictly prohibited and may result in legal action. By accessing or handling this work in any way,  
-   you acknowledge and agree to abide by these terms.  
+## CONTACT FOR APPROVAL
+If you want to use, modify, or build upon this work, you **must first obtain explicit written
+permission** from the author.  
+Collaboration is welcome, provided mutual understanding and respect are upheld.
 
-   **If in doubt—ask first.** 
+**Contact**: [https://github.com/csingendonk](https://github.com/csingendonk)
 
-   **Any API or logic used, but not defined, within is most likely documented in W3, mdn, or google dev docs as the script uses base JS web APIs and those are subject to the owners copyright.**
-   **Any breech of contract, law, or other official restrictions occuring due to use of this work is entirely upon the user**
+---
+
+## LEGAL NOTICE
+Any unauthorized use, reproduction, modification, or distribution of this or any other unlicensed work,
+in whole or in part, is strictly prohibited and may result in legal action. By accessing or handling
+this work, you acknowledge and agree to these terms.
+
+**If in doubt—ask first.**
+
+---
+
+### OBSOLETE DRAFT
+This is a draft copy of the complete code from a previous point in time and state.
