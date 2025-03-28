@@ -1,10 +1,6 @@
 // ALL RIGHTS RESERVED
 // COPYRIGHT 2024 2025 CHRIS SINGENDONK   
 
-const author = `Chris Singendonk`;
-const intent = `To learn enough to maybe get a job and buy my own groceries and pay for upgrading my high school grades from a decade ago so I can get into post-secondary school for CS`;
-const thisScript = `Cyclops A.K.A Network Control A.K.A DOMLogger A.K.A Network Interceptor, maybe more names through the iterations over the past year or more I've written and tested.`;
-const thisScriptIntent = `Provide devs with full controll over the http activity while debugging without having to include extra cde in their scripts. Potentially a manual tracker and data theft and hidden background telemetry request decision making interface for user to take control of their data being sent over the network.`;
 const originalFetch = window.fetch;
 (function () {
 setInterval(() => {
